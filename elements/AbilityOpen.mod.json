@@ -1,0 +1,12 @@
+{
+  "_fv": 34,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "H",
+    "keyBindingName": "Ability Open",
+    "keyBindingCategoryKey": "the_source",
+    "onKeyPressed": {
+      "name": "AbilityOpenOnKeyPressed"
+    }
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Power:",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Power:",
+          "x": 141,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Mastery:",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Mastery:",
+          "x": 141,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Race:",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Race:",
+          "x": 141,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Faction:",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Faction:",
+          "x": 141,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Status:",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Status:",
+          "x": 141,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:power>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<VAR:power>",
+          "x": 195,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:level>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:level>",
+          "x": 195,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:faction>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<VAR:faction>",
+          "x": 195,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:race>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<VAR:race>",
+          "x": 195,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:status>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<VAR:status>",
+          "x": 195,
+          "y": 152
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

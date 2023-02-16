@@ -1,9 +1,95 @@
 {
-  "mod_elements": [],
-  "variable_elements": [],
+  "mod_elements": [
+    {
+      "name": "AbilitiesGui",
+      "type": "gui",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "abilities_gui",
+      "path": "~/gui"
+    },
+    {
+      "name": "AbilityOpenOnKeyPressed",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_open_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/gui"
+    },
+    {
+      "name": "AbilityOpen",
+      "type": "keybind",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_open",
+      "path": "~/gui"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "power",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "NULL"
+    },
+    {
+      "name": "level",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "faction",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "NULL"
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "NULL"
+    },
+    {
+      "name": "race",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "NULL"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "key.categories.the_source": "The Source",
+      "key.the_source.ability_open": "Ability Open"
+    }
   },
   "foldersRoot": {
     "name": "~",
@@ -14,7 +100,24 @@
       },
       {
         "name": "abilities",
-        "children": []
+        "children": [
+          {
+            "name": "Heat",
+            "children": []
+          },
+          {
+            "name": "Lightining",
+            "children": []
+          },
+          {
+            "name": "Raven",
+            "children": []
+          },
+          {
+            "name": "Material Control",
+            "children": []
+          }
+        ]
       },
       {
         "name": "mobs",
@@ -23,6 +126,19 @@
       {
         "name": "structures",
         "children": []
+      },
+      {
+        "name": "ui",
+        "children": [
+          {
+            "name": "flow bar",
+            "children": []
+          },
+          {
+            "name": "Life Force Bar",
+            "children": []
+          }
+        ]
       }
     ]
   },
