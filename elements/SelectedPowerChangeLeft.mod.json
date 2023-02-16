@@ -1,0 +1,12 @@
+{
+  "_fv": 34,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "Z",
+    "keyBindingName": "Power Change Left",
+    "keyBindingCategoryKey": "the_source",
+    "onKeyPressed": {
+      "name": "PowerChangeToLeft"
+    }
+  }
+}

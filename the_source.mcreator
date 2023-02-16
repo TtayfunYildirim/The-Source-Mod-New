@@ -50,6 +50,378 @@
       "locked_code": false,
       "registry_name": "ability_open",
       "path": "~/gui"
+    },
+    {
+      "name": "AbilityChooseGuiHeat",
+      "type": "gui",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_choose_gui_heat",
+      "path": "~/gui"
+    },
+    {
+      "name": "AbilityChooseGuiLightining",
+      "type": "gui",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_choose_gui_lightining",
+      "path": "~/gui"
+    },
+    {
+      "name": "AbilityChooseGuiRaven",
+      "type": "gui",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_choose_gui_raven",
+      "path": "~/gui"
+    },
+    {
+      "name": "AbilityChooseGuiMaterialControl",
+      "type": "gui",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_choose_gui_material_control",
+      "path": "~/gui"
+    },
+    {
+      "name": "ReturnTrueIfPowerPresent",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_true_if_power_present",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/gui"
+    },
+    {
+      "name": "AbilityGuiNextButton",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_gui_next_button",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/gui"
+    },
+    {
+      "name": "AbilityButtonPrev",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_button_prev",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/gui"
+    },
+    {
+      "name": "TheSource",
+      "type": "tab",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_source",
+      "path": "~/misc"
+    },
+    {
+      "name": "DenemeRightclicked",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deneme_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/items"
+    },
+    {
+      "name": "Deneme",
+      "type": "item",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deneme",
+      "path": "~/items"
+    },
+    {
+      "name": "PowerSlotsHeatDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "power_slots_heat_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ui/Power Slots"
+    },
+    {
+      "name": "HeatTouchOpenedCondition",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heat_touch_opened_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ui/Power Slots"
+    },
+    {
+      "name": "HeatSecondPowerSelectedControl",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heat_second_power_selected_control",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ui/Power Slots"
+    },
+    {
+      "name": "HeatFirstPowerSelectedControl",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heat_first_power_selected_control",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ui/Power Slots"
+    },
+    {
+      "name": "HeatThirdPowerSelectedControl",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heat_third_power_selected_control",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ui/Power Slots"
+    },
+    {
+      "name": "HeatFourthPowerSelectedControl",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heat_fourth_power_selected_control",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ui/Power Slots"
+    },
+    {
+      "name": "HeatFifthPowerSelectedControl",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heat_fifth_power_selected_control",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ui/Power Slots"
+    },
+    {
+      "name": "PowerSlots",
+      "type": "overlay",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "power_slots",
+      "path": "~/ui/Power Slots"
+    },
+    {
+      "name": "SelectedPowerChangeLeft",
+      "type": "keybind",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "selected_power_change_left",
+      "path": "~/ui/Power Slots"
+    },
+    {
+      "name": "PowerChangeToLeft",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "power_change_to_left",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ui/Power Slots"
+    },
+    {
+      "name": "PowerChangeToRight",
+      "type": "keybind",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "power_change_to_right",
+      "path": "~/ui/Power Slots"
+    },
+    {
+      "name": "PowerChangeRight",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "power_change_right",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ui/Power Slots"
+    },
+    {
+      "name": "SetMasteryTo",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_mastery_to",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/commands"
+    },
+    {
+      "name": "SetMastery",
+      "type": "command",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_mastery",
+      "path": "~/commands"
     }
   ],
   "variable_elements": [
@@ -82,12 +454,40 @@
       "type": "string",
       "scope": "player_persistent",
       "value": "NULL"
+    },
+    {
+      "name": "selectedpower",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "flowlevel",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "lifeforcelevel",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "soulforcelevel",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "key.the_source.selected_power_change_left": "Power Change Left",
+      "item.the_source.deneme": "Deneme",
       "key.categories.the_source": "The Source",
+      "itemGroup.tabthe_source": "The Source",
+      "key.the_source.power_change_to_right": "Power Change Right",
       "key.the_source.ability_open": "Ability Open"
     }
   },
@@ -137,8 +537,53 @@
           {
             "name": "Life Force Bar",
             "children": []
+          },
+          {
+            "name": "Soul Force Bar",
+            "children": []
+          },
+          {
+            "name": "Power Slots",
+            "children": [
+              {
+                "name": "lightining slots",
+                "children": []
+              },
+              {
+                "name": "raven slot",
+                "children": []
+              },
+              {
+                "name": "material control slots",
+                "children": []
+              }
+            ]
           }
         ]
+      },
+      {
+        "name": "items",
+        "children": []
+      },
+      {
+        "name": "blocks",
+        "children": []
+      },
+      {
+        "name": "achievement",
+        "children": []
+      },
+      {
+        "name": "misc",
+        "children": []
+      },
+      {
+        "name": "level and stat",
+        "children": []
+      },
+      {
+        "name": "commands",
+        "children": []
       }
     ]
   },

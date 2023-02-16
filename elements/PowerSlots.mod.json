@@ -1,0 +1,149 @@
+{
+  "_fv": 34,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "slotmc.png",
+          "use1Xscale": false,
+          "name": "slotmc.png",
+          "x": 6,
+          "y": 179
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "slotmc.png",
+          "use1Xscale": false,
+          "name": "slotmc.png",
+          "x": 29,
+          "y": 179
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "slotmc.png",
+          "use1Xscale": false,
+          "name": "slotmc.png",
+          "x": 51,
+          "y": 179
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "slotmc.png",
+          "use1Xscale": false,
+          "name": "slotmc.png",
+          "x": 6,
+          "y": 201
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "slotmc.png",
+          "use1Xscale": false,
+          "name": "slotmc.png",
+          "x": 29,
+          "y": 201
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "heatouch.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "HeatTouchOpenedCondition"
+          },
+          "name": "heatouch.png",
+          "x": 6,
+          "y": 179
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "selectionring.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "HeatFirstPowerSelectedControl"
+          },
+          "name": "selectionring.png",
+          "x": 6,
+          "y": 179
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "selectionring.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "HeatSecondPowerSelectedControl"
+          },
+          "name": "selectionring.png",
+          "x": 29,
+          "y": 179
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "selectionring.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "HeatThirdPowerSelectedControl"
+          },
+          "name": "selectionring.png",
+          "x": 51,
+          "y": 179
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "selectionring.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "HeatFourthPowerSelectedControl"
+          },
+          "name": "selectionring.png",
+          "x": 6,
+          "y": 201
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "selectionring.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "HeatFifthPowerSelectedControl"
+          },
+          "name": "selectionring.png",
+          "x": 29,
+          "y": 201
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "PowerSlotsHeatDisplayOverlayIngame"
+    },
+    "gridSettings": {
+      "sx": 9,
+      "sy": 11,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

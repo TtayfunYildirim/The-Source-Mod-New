@@ -1,4 +1,8 @@
 {
+  "key.the_source.selected_power_change_left": "Power Change Left",
+  "item.the_source.deneme": "Deneme",
   "key.categories.the_source": "The Source",
+  "itemGroup.tabthe_source": "The Source",
+  "key.the_source.power_change_to_right": "Power Change Right",
   "key.the_source.ability_open": "Ability Open"
 }

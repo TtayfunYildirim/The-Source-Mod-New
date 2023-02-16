@@ -22,7 +22,7 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.gui.ScreenManager;
 
-import net.mcreator.thesource.procedures.AbilityGuiNextButtonProcedure;
+import net.mcreator.thesource.procedures.AbilityButtonPrevProcedure;
 import net.mcreator.thesource.TheSourceModElements;
 
 import java.util.stream.Stream;
@@ -32,12 +32,12 @@ import java.util.HashMap;
 import java.util.AbstractMap;
 
 @TheSourceModElements.ModElement.Tag
-public class AbilitiesGuiGui extends TheSourceModElements.ModElement {
+public class AbilityChooseGuiHeatGui extends TheSourceModElements.ModElement {
 	public static HashMap guistate = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
 
-	public AbilitiesGuiGui(TheSourceModElements instance) {
-		super(instance, 1);
+	public AbilityChooseGuiHeatGui(TheSourceModElements instance) {
+		super(instance, 4);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,
@@ -49,13 +49,13 @@ public class AbilitiesGuiGui extends TheSourceModElements.ModElement {
 	private static class ContainerRegisterHandler {
 		@SubscribeEvent
 		public void registerContainer(RegistryEvent.Register<ContainerType<?>> event) {
-			event.getRegistry().register(containerType.setRegistryName("abilities_gui"));
+			event.getRegistry().register(containerType.setRegistryName("ability_choose_gui_heat"));
 		}
 	}
 
 	@OnlyIn(Dist.CLIENT)
 	public void initElements() {
-		DeferredWorkQueue.runLater(() -> ScreenManager.registerFactory(containerType, AbilitiesGuiGuiWindow::new));
+		DeferredWorkQueue.runLater(() -> ScreenManager.registerFactory(containerType, AbilityChooseGuiHeatGuiWindow::new));
 	}
 
 	public static class GuiContainerModFactory implements IContainerFactory {
@@ -187,7 +187,7 @@ public class AbilitiesGuiGui extends TheSourceModElements.ModElement {
 			return;
 		if (buttonID == 0) {
 
-			AbilityGuiNextButtonProcedure.executeProcedure(Stream
+			AbilityButtonPrevProcedure.executeProcedure(Stream
 					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
 							new AbstractMap.SimpleEntry<>("z", z), new AbstractMap.SimpleEntry<>("entity", entity))
 					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));

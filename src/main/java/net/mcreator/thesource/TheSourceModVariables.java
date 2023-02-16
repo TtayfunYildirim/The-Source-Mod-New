@@ -76,6 +76,10 @@ public class TheSourceModVariables {
 			nbt.putString("faction", instance.faction);
 			nbt.putString("status", instance.status);
 			nbt.putString("race", instance.race);
+			nbt.putDouble("selectedpower", instance.selectedpower);
+			nbt.putDouble("flowlevel", instance.flowlevel);
+			nbt.putDouble("lifeforcelevel", instance.lifeforcelevel);
+			nbt.putDouble("soulforcelevel", instance.soulforcelevel);
 			return nbt;
 		}
 
@@ -87,6 +91,10 @@ public class TheSourceModVariables {
 			instance.faction = nbt.getString("faction");
 			instance.status = nbt.getString("status");
 			instance.race = nbt.getString("race");
+			instance.selectedpower = nbt.getDouble("selectedpower");
+			instance.flowlevel = nbt.getDouble("flowlevel");
+			instance.lifeforcelevel = nbt.getDouble("lifeforcelevel");
+			instance.soulforcelevel = nbt.getDouble("soulforcelevel");
 		}
 	}
 
@@ -96,6 +104,10 @@ public class TheSourceModVariables {
 		public String faction = "NULL";
 		public String status = "NULL";
 		public String race = "NULL";
+		public double selectedpower = 0;
+		public double flowlevel = 0;
+		public double lifeforcelevel = 0;
+		public double soulforcelevel = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayerEntity)
@@ -135,6 +147,10 @@ public class TheSourceModVariables {
 		clone.faction = original.faction;
 		clone.status = original.status;
 		clone.race = original.race;
+		clone.selectedpower = original.selectedpower;
+		clone.flowlevel = original.flowlevel;
+		clone.lifeforcelevel = original.lifeforcelevel;
+		clone.soulforcelevel = original.soulforcelevel;
 		if (!event.isWasDeath()) {
 		}
 	}
@@ -166,6 +182,10 @@ public class TheSourceModVariables {
 					variables.faction = message.data.faction;
 					variables.status = message.data.status;
 					variables.race = message.data.race;
+					variables.selectedpower = message.data.selectedpower;
+					variables.flowlevel = message.data.flowlevel;
+					variables.lifeforcelevel = message.data.lifeforcelevel;
+					variables.soulforcelevel = message.data.soulforcelevel;
 				}
 			});
 			context.setPacketHandled(true);

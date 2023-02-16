@@ -5,16 +5,23 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
+import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.client.gui.widget.button.Button;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.thesource.procedures.ReturnTrueIfPowerPresentProcedure;
 import net.mcreator.thesource.TheSourceModVariables;
+import net.mcreator.thesource.TheSourceMod;
 
+import java.util.stream.Stream;
+import java.util.Map;
 import java.util.HashMap;
+import java.util.AbstractMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.matrix.MatrixStack;
@@ -101,5 +108,19 @@ public class AbilitiesGuiGuiWindow extends ContainerScreen<AbilitiesGuiGui.GuiCo
 	public void init(Minecraft minecraft, int width, int height) {
 		super.init(minecraft, width, height);
 		minecraft.keyboardListener.enableRepeatEvents(true);
+		this.addButton(new Button(this.guiLeft + 123, this.guiTop + 133, 35, 20, new StringTextComponent(">>"), e -> {
+			if (ReturnTrueIfPowerPresentProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll))) {
+				TheSourceMod.PACKET_HANDLER.sendToServer(new AbilitiesGuiGui.ButtonPressedMessage(0, x, y, z));
+				AbilitiesGuiGui.handleButtonAction(entity, 0, x, y, z);
+			}
+		}) {
+			@Override
+			public void render(MatrixStack ms, int gx, int gy, float ticks) {
+				if (ReturnTrueIfPowerPresentProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity))
+						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll)))
+					super.render(ms, gx, gy, ticks);
+			}
+		});
 	}
 }

@@ -139,6 +139,23 @@
           "x": 195,
           "y": 152
         }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": ">>",
+          "onClick": {
+            "name": "AbilityGuiNextButton"
+          },
+          "displayCondition": {
+            "name": "ReturnTrueIfPowerPresent"
+          },
+          "width": 35,
+          "height": 20,
+          "name": ">>",
+          "x": 249,
+          "y": 170
+        }
       }
     ],
     "gridSettings": {

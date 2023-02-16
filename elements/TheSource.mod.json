@@ -1,0 +1,11 @@
+{
+  "_fv": 34,
+  "_type": "tab",
+  "definition": {
+    "name": "The Source",
+    "icon": {
+      "value": "Blocks.SOUL_FIRE"
+    },
+    "showSearch": true
+  }
+}
