@@ -80,6 +80,9 @@ public class TheSourceModVariables {
 			nbt.putDouble("flowlevel", instance.flowlevel);
 			nbt.putDouble("lifeforcelevel", instance.lifeforcelevel);
 			nbt.putDouble("soulforcelevel", instance.soulforcelevel);
+			nbt.putDouble("playerexperience", instance.playerexperience);
+			nbt.putDouble("playerexpcap", instance.playerexpcap);
+			nbt.putDouble("lastopenedpowernumber", instance.lastopenedpowernumber);
 			return nbt;
 		}
 
@@ -95,19 +98,25 @@ public class TheSourceModVariables {
 			instance.flowlevel = nbt.getDouble("flowlevel");
 			instance.lifeforcelevel = nbt.getDouble("lifeforcelevel");
 			instance.soulforcelevel = nbt.getDouble("soulforcelevel");
+			instance.playerexperience = nbt.getDouble("playerexperience");
+			instance.playerexpcap = nbt.getDouble("playerexpcap");
+			instance.lastopenedpowernumber = nbt.getDouble("lastopenedpowernumber");
 		}
 	}
 
 	public static class PlayerVariables {
-		public String power = "NULL";
+		public String power = "NONE";
 		public double level = 0;
-		public String faction = "NULL";
-		public String status = "NULL";
-		public String race = "NULL";
-		public double selectedpower = 0;
-		public double flowlevel = 0;
-		public double lifeforcelevel = 0;
+		public String faction = "NONE";
+		public String status = "NONE";
+		public String race = "NONE";
+		public double selectedpower = -1.0;
+		public double flowlevel = 50.0;
+		public double lifeforcelevel = 0.0;
 		public double soulforcelevel = 0;
+		public double playerexperience = 0;
+		public double playerexpcap = 20.0;
+		public double lastopenedpowernumber = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayerEntity)
@@ -151,6 +160,9 @@ public class TheSourceModVariables {
 		clone.flowlevel = original.flowlevel;
 		clone.lifeforcelevel = original.lifeforcelevel;
 		clone.soulforcelevel = original.soulforcelevel;
+		clone.playerexperience = original.playerexperience;
+		clone.playerexpcap = original.playerexpcap;
+		clone.lastopenedpowernumber = original.lastopenedpowernumber;
 		if (!event.isWasDeath()) {
 		}
 	}
@@ -186,6 +198,9 @@ public class TheSourceModVariables {
 					variables.flowlevel = message.data.flowlevel;
 					variables.lifeforcelevel = message.data.lifeforcelevel;
 					variables.soulforcelevel = message.data.soulforcelevel;
+					variables.playerexperience = message.data.playerexperience;
+					variables.playerexpcap = message.data.playerexpcap;
+					variables.lastopenedpowernumber = message.data.lastopenedpowernumber;
 				}
 			});
 			context.setPacketHandled(true);

@@ -44,6 +44,11 @@ public class AbilitiesGuiGuiWindow extends ContainerScreen<AbilitiesGuiGui.GuiCo
 		this.ySize = 166;
 	}
 
+	@Override
+	public boolean isPauseScreen() {
+		return true;
+	}
+
 	private static final ResourceLocation texture = new ResourceLocation("the_source:textures/screens/abilities_gui.png");
 
 	@Override

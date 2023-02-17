@@ -13,6 +13,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.thesource.procedures.StrongPunchOpenedConditionProcedure;
 import net.mcreator.thesource.procedures.PowerSlotsHeatDisplayOverlayIngameProcedure;
 import net.mcreator.thesource.procedures.HeatTouchOpenedConditionProcedure;
 import net.mcreator.thesource.procedures.HeatThirdPowerSelectedControlProcedure;
@@ -20,6 +21,9 @@ import net.mcreator.thesource.procedures.HeatSecondPowerSelectedControlProcedure
 import net.mcreator.thesource.procedures.HeatFourthPowerSelectedControlProcedure;
 import net.mcreator.thesource.procedures.HeatFirstPowerSelectedControlProcedure;
 import net.mcreator.thesource.procedures.HeatFifthPowerSelectedControlProcedure;
+import net.mcreator.thesource.procedures.FlamethrowerOpenedConditionProcedure;
+import net.mcreator.thesource.procedures.CloverCanonOpenedConditionProcedure;
+import net.mcreator.thesource.procedures.BurningWhirlpoolOpenedConditionProcedure;
 
 import java.util.stream.Stream;
 import java.util.Map;
@@ -106,6 +110,26 @@ public class PowerSlotsOverlay {
 						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("the_source:textures/screens/selectionring.png"));
 					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -184, posY + 81, 0, 0, 16, 16, 16, 16);
+				}
+				if (StrongPunchOpenedConditionProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity))
+						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll))) {
+					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("the_source:textures/screens/strongpunchh.png"));
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -184, posY + 59, 0, 0, 16, 16, 16, 16);
+				}
+				if (FlamethrowerOpenedConditionProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity))
+						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll))) {
+					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("the_source:textures/screens/flamethrower.png"));
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -162, posY + 59, 0, 0, 16, 16, 16, 16);
+				}
+				if (BurningWhirlpoolOpenedConditionProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity))
+						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll))) {
+					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("the_source:textures/screens/whirlpool.png"));
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -184, posY + 81, 0, 0, 16, 16, 16, 16);
+				}
+				if (CloverCanonOpenedConditionProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity))
+						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll))) {
+					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("the_source:textures/screens/clovercannon.png"));
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -207, posY + 81, 0, 0, 16, 16, 16, 16);
 				}
 			}
 			RenderSystem.depthMask(true);

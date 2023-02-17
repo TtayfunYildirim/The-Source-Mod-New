@@ -7,19 +7,19 @@ import net.mcreator.thesource.TheSourceMod;
 
 import java.util.Map;
 
-public class ReturnTrueIfPowerPresentProcedure {
+public class CloverCanonOpenedConditionProcedure {
 
 	public static boolean executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				TheSourceMod.LOGGER.warn("Failed to load dependency entity for procedure ReturnTrueIfPowerPresent!");
+				TheSourceMod.LOGGER.warn("Failed to load dependency entity for procedure CloverCanonOpenedCondition!");
 			return false;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		if (((entity.getCapability(TheSourceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new TheSourceModVariables.PlayerVariables())).power).equals("NONE")) {
-			return false;
+		if ((entity.getCapability(TheSourceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new TheSourceModVariables.PlayerVariables())).level >= 16) {
+			return true;
 		}
-		return true;
+		return false;
 	}
 }

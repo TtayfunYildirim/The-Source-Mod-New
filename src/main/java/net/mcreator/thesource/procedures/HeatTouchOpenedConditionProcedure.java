@@ -17,7 +17,7 @@ public class HeatTouchOpenedConditionProcedure {
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if ((entity.getCapability(TheSourceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new TheSourceModVariables.PlayerVariables())).level >= 10) {
+				.orElse(new TheSourceModVariables.PlayerVariables())).level >= 3) {
 			return true;
 		}
 		return false;

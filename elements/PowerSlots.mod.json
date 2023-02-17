@@ -131,6 +131,58 @@
           "x": 29,
           "y": 201
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "strongpunchh.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StrongPunchOpenedCondition"
+          },
+          "name": "strongpunchh.png",
+          "x": 29,
+          "y": 179
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "flamethrower.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FlamethrowerOpenedCondition"
+          },
+          "name": "flamethrower.png",
+          "x": 51,
+          "y": 179
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "whirlpool.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BurningWhirlpoolOpenedCondition"
+          },
+          "name": "whirlpool.png",
+          "x": 29,
+          "y": 201
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "clovercannon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CloverCanonOpenedCondition"
+          },
+          "name": "clovercannon.png",
+          "x": 6,
+          "y": 201
+        }
       }
     ],
     "baseTexture": "",

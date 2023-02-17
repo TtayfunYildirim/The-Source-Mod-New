@@ -422,6 +422,138 @@
       "locked_code": false,
       "registry_name": "set_mastery",
       "path": "~/commands"
+    },
+    {
+      "name": "StrongPunchOpenedCondition",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strong_punch_opened_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ui/Power Slots"
+    },
+    {
+      "name": "FlamethrowerOpenedCondition",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flamethrower_opened_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ui/Power Slots"
+    },
+    {
+      "name": "BurningWhirlpoolOpenedCondition",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burning_whirlpool_opened_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ui/Power Slots"
+    },
+    {
+      "name": "CloverCanonOpenedCondition",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clover_canon_opened_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ui/Power Slots"
+    },
+    {
+      "name": "ExpCapAndLevelUp",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exp_cap_and_level_up",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/level and stat/level system"
+    },
+    {
+      "name": "LevelUpProcedure",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_up_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/level and stat/level system"
+    },
+    {
+      "name": "LastOpenedPowerForHeat",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "last_opened_power_for_heat",
+      "metadata": {
+        "return_type": "number",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ui/Power Slots"
     }
   ],
   "variable_elements": [
@@ -429,7 +561,7 @@
       "name": "power",
       "type": "string",
       "scope": "player_persistent",
-      "value": "NULL"
+      "value": "NONE"
     },
     {
       "name": "level",
@@ -441,40 +573,58 @@
       "name": "faction",
       "type": "string",
       "scope": "player_persistent",
-      "value": "NULL"
+      "value": "NONE"
     },
     {
       "name": "status",
       "type": "string",
       "scope": "player_persistent",
-      "value": "NULL"
+      "value": "NONE"
     },
     {
       "name": "race",
       "type": "string",
       "scope": "player_persistent",
-      "value": "NULL"
+      "value": "NONE"
     },
     {
       "name": "selectedpower",
       "type": "number",
       "scope": "player_persistent",
-      "value": "0"
+      "value": "-1.0"
     },
     {
       "name": "flowlevel",
       "type": "number",
       "scope": "player_persistent",
-      "value": "0"
+      "value": "50.0"
     },
     {
       "name": "lifeforcelevel",
       "type": "number",
       "scope": "player_persistent",
-      "value": "0"
+      "value": "0.0"
     },
     {
       "name": "soulforcelevel",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "playerexperience",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "playerexpcap",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "20.0"
+    },
+    {
+      "name": "lastopenedpowernumber",
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
@@ -579,7 +729,12 @@
       },
       {
         "name": "level and stat",
-        "children": []
+        "children": [
+          {
+            "name": "level system",
+            "children": []
+          }
+        ]
       },
       {
         "name": "commands",

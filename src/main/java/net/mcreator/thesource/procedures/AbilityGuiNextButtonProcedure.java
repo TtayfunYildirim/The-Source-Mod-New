@@ -60,8 +60,6 @@ public class AbilityGuiNextButtonProcedure {
 		Entity entity = (Entity) dependencies.get("entity");
 		if (((entity.getCapability(TheSourceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new TheSourceModVariables.PlayerVariables())).power).equals("Heat")) {
-			if (entity instanceof PlayerEntity)
-				((PlayerEntity) entity).closeScreen();
 			{
 				Entity _ent = entity;
 				if (_ent instanceof ServerPlayerEntity) {

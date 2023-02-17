@@ -7,7 +7,7 @@
     "height": 166,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
-    "renderBgLayer": false,
+    "renderBgLayer": true,
     "doesPauseGame": true,
     "components": [
       {
@@ -32,6 +32,19 @@
           "name": "<<",
           "x": 132,
           "y": 177
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:playerexperience>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:playerexperience>",
+          "x": 137,
+          "y": 46
         }
       }
     ],
