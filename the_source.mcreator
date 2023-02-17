@@ -787,6 +787,18 @@
         "dependencies": []
       },
       "path": "~/mobs"
+    },
+    {
+      "name": "Nn",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nn",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/mobs"
     }
   ],
   "variable_elements": [
