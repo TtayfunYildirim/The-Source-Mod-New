@@ -775,6 +775,18 @@
         ]
       },
       "path": "~/passive abilities"
+    },
+    {
+      "name": "Aa",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aa",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/mobs"
     }
   ],
   "variable_elements": [
