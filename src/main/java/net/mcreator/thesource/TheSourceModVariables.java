@@ -83,6 +83,7 @@ public class TheSourceModVariables {
 			nbt.putDouble("playerexperience", instance.playerexperience);
 			nbt.putDouble("playerexpcap", instance.playerexpcap);
 			nbt.putDouble("lastopenedpowernumber", instance.lastopenedpowernumber);
+			nbt.putString("selectedskill", instance.selectedskill);
 			return nbt;
 		}
 
@@ -101,12 +102,13 @@ public class TheSourceModVariables {
 			instance.playerexperience = nbt.getDouble("playerexperience");
 			instance.playerexpcap = nbt.getDouble("playerexpcap");
 			instance.lastopenedpowernumber = nbt.getDouble("lastopenedpowernumber");
+			instance.selectedskill = nbt.getString("selectedskill");
 		}
 	}
 
 	public static class PlayerVariables {
 		public String power = "NONE";
-		public double level = 0;
+		public double level = 0.0;
 		public String faction = "NONE";
 		public String status = "NONE";
 		public String race = "NONE";
@@ -117,6 +119,7 @@ public class TheSourceModVariables {
 		public double playerexperience = 0;
 		public double playerexpcap = 20.0;
 		public double lastopenedpowernumber = 0;
+		public String selectedskill = "NONE";
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayerEntity)
@@ -163,6 +166,7 @@ public class TheSourceModVariables {
 		clone.playerexperience = original.playerexperience;
 		clone.playerexpcap = original.playerexpcap;
 		clone.lastopenedpowernumber = original.lastopenedpowernumber;
+		clone.selectedskill = original.selectedskill;
 		if (!event.isWasDeath()) {
 		}
 	}
@@ -201,6 +205,7 @@ public class TheSourceModVariables {
 					variables.playerexperience = message.data.playerexperience;
 					variables.playerexpcap = message.data.playerexpcap;
 					variables.lastopenedpowernumber = message.data.lastopenedpowernumber;
+					variables.selectedskill = message.data.selectedskill;
 				}
 			});
 			context.setPacketHandled(true);

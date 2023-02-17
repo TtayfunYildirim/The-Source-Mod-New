@@ -1,0 +1,12 @@
+{
+  "strongpunch": {
+    "category": "hostile",
+    "subtitle": "subtitles.strongpunch",
+    "sounds": [
+      {
+        "name": "the_source:strongpunch",
+        "stream": false
+      }
+    ]
+  }
+}

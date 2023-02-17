@@ -4,11 +4,14 @@ license="Academic Free License v3.0"
 
 [[mods]]
 modId="the_source"
-version="1.0.0"
+version="0.0.4"
 displayName="The Source"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://mcreator.net"
-authors="Tayfun, MCreator"
+authors="Tayfun"
+description='''
+Let your powers run wild in a world divided between normals and source users.
+'''
 
 [[dependencies.the_source]]
     modId="minecraft"

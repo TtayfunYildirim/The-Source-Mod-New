@@ -1,0 +1,12 @@
+{
+  "_fv": 34,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "X",
+    "keyBindingName": "Ability Use",
+    "keyBindingCategoryKey": "the_source",
+    "onKeyPressed": {
+      "name": "AbilityUseOnKeyPressed"
+    }
+  }
+}

@@ -47,6 +47,8 @@ public class TheSourceModElements {
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 
 	public TheSourceModElements() {
+		sounds.put(new ResourceLocation("the_source", "strongpunch"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("the_source", "strongpunch")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("the_source").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

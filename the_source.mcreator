@@ -554,6 +554,227 @@
         ]
       },
       "path": "~/ui/Power Slots"
+    },
+    {
+      "name": "StrongPunchProjectileWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strong_punch_projectile_while_projectile_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/abilities/Heat/strong punch"
+    },
+    {
+      "name": "StrongPunchProjectile",
+      "type": "rangeditem",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strong_punch_projectile",
+      "path": "~/abilities/Heat/strong punch"
+    },
+    {
+      "name": "StrongPunchUsed",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strong_punch_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/abilities/Heat/strong punch"
+    },
+    {
+      "name": "AbilityUseOnKeyPressed",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_use_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/abilities"
+    },
+    {
+      "name": "AbilityUse",
+      "type": "keybind",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_use",
+      "path": "~/abilities"
+    },
+    {
+      "name": "StrongPunchProjectileProjectileHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strong_punch_projectile_projectile_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/abilities/Heat/strong punch"
+    },
+    {
+      "name": "FlamethrowerProjectileWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flamethrower_projectile_while_projectile_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/abilities/Heat/flamethrower"
+    },
+    {
+      "name": "FlamethrowerProjectileProjectileHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flamethrower_projectile_projectile_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/abilities/Heat/flamethrower"
+    },
+    {
+      "name": "FlamethrowerProjectile",
+      "type": "rangeditem",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flamethrower_projectile",
+      "path": "~/abilities/Heat/flamethrower"
+    },
+    {
+      "name": "FlamethrowerUsed",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flamethrower_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/abilities/Heat/strong punch"
+    },
+    {
+      "name": "FlamethrowerBurnEffectStartedapplied",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flamethrower_burn_effect_startedapplied",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/abilities/Heat/flamethrower"
+    },
+    {
+      "name": "FlamethrowerBurn",
+      "type": "potioneffect",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flamethrower_burn",
+      "path": "~/abilities/Heat/flamethrower"
+    },
+    {
+      "name": "PassiveAbility",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "passive_ability",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/passive abilities"
     }
   ],
   "variable_elements": [
@@ -567,7 +788,7 @@
       "name": "level",
       "type": "number",
       "scope": "player_persistent",
-      "value": "0"
+      "value": "0.0"
     },
     {
       "name": "faction",
@@ -628,16 +849,36 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "selectedskill",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "NONE"
     }
   ],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "strongpunch",
+      "files": [
+        "strongpunch"
+      ],
+      "category": "hostile",
+      "subtitle": "Strong Punch"
+    }
+  ],
   "language_map": {
     "en_us": {
       "key.the_source.selected_power_change_left": "Power Change Left",
       "item.the_source.deneme": "Deneme",
+      "key.the_source.ability_use": "Ability Use",
       "key.categories.the_source": "The Source",
       "itemGroup.tabthe_source": "The Source",
       "key.the_source.power_change_to_right": "Power Change Right",
+      "item.the_source.strong_punch_projectile": "Strong Punch Projectile",
+      "item.the_source.flamethrower_projectile": "Flamethrower Projectile",
+      "effect.flamethrower_burn": "Burning",
+      "subtitles.strongpunch": "Strong Punch",
       "key.the_source.ability_open": "Ability Open"
     }
   },
@@ -653,7 +894,24 @@
         "children": [
           {
             "name": "Heat",
-            "children": []
+            "children": [
+              {
+                "name": "strong punch",
+                "children": []
+              },
+              {
+                "name": "flamethrower",
+                "children": []
+              },
+              {
+                "name": "burning whirlpool",
+                "children": []
+              },
+              {
+                "name": "clover cannon",
+                "children": []
+              }
+            ]
           },
           {
             "name": "Lightining",
@@ -739,15 +997,19 @@
       {
         "name": "commands",
         "children": []
+      },
+      {
+        "name": "passive abilities",
+        "children": []
       }
     ]
   },
   "workspaceSettings": {
     "modid": "the_source",
     "modName": "The Source",
-    "version": "1.0.0",
-    "author": "Tayfun, MCreator",
-    "websiteURL": "https://mcreator.net",
+    "version": "0.0.4",
+    "description": "Let your powers run wild in a world divided between normals and source users.",
+    "author": "Tayfun",
     "license": "Academic Free License v3.0",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
@@ -756,6 +1018,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.16.5",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.thesource",
     "lockBaseModFiles": false
   },

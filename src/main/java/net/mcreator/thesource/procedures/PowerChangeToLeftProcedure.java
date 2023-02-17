@@ -42,5 +42,51 @@ public class PowerChangeToLeftProcedure {
 				});
 			}
 		}
+		if ((entity.getCapability(TheSourceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new TheSourceModVariables.PlayerVariables())).selectedpower == 0) {
+			{
+				String _setval = "Heat Touch";
+				entity.getCapability(TheSourceModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.power = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+		} else if ((entity.getCapability(TheSourceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new TheSourceModVariables.PlayerVariables())).selectedpower == 1) {
+			{
+				String _setval = "Strong Punch";
+				entity.getCapability(TheSourceModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.power = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+		} else if ((entity.getCapability(TheSourceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new TheSourceModVariables.PlayerVariables())).selectedpower == 2) {
+			{
+				String _setval = "Flamethrower";
+				entity.getCapability(TheSourceModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.power = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+		} else if ((entity.getCapability(TheSourceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new TheSourceModVariables.PlayerVariables())).selectedpower == 3) {
+			{
+				String _setval = "Clover Cannon";
+				entity.getCapability(TheSourceModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.power = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+		} else if ((entity.getCapability(TheSourceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new TheSourceModVariables.PlayerVariables())).selectedpower == 4) {
+			{
+				String _setval = "Burning Whirlpool";
+				entity.getCapability(TheSourceModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.power = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+		}
 	}
 }

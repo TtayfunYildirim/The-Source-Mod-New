@@ -24,6 +24,7 @@ import net.mcreator.thesource.procedures.HeatFifthPowerSelectedControlProcedure;
 import net.mcreator.thesource.procedures.FlamethrowerOpenedConditionProcedure;
 import net.mcreator.thesource.procedures.CloverCanonOpenedConditionProcedure;
 import net.mcreator.thesource.procedures.BurningWhirlpoolOpenedConditionProcedure;
+import net.mcreator.thesource.TheSourceModVariables;
 
 import java.util.stream.Stream;
 import java.util.Map;
@@ -131,6 +132,10 @@ public class PowerSlotsOverlay {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("the_source:textures/screens/clovercannon.png"));
 					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -207, posY + 81, 0, 0, 16, 16, 16, 16);
 				}
+				Minecraft.getInstance().fontRenderer.drawString(event.getMatrixStack(),
+						"" + ((entity.getCapability(TheSourceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+								.orElse(new TheSourceModVariables.PlayerVariables())).selectedskill) + "",
+						posX + -211, posY + 37, -65485);
 			}
 			RenderSystem.depthMask(true);
 			RenderSystem.enableDepthTest();

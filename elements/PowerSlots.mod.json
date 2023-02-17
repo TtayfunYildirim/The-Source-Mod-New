@@ -183,6 +183,19 @@
           "x": 6,
           "y": 201
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:selectedskill>",
+          "color": {
+            "value": -65485,
+            "falpha": 0.0
+          },
+          "name": "<VAR:selectedskill>",
+          "x": 2,
+          "y": 157
+        }
       }
     ],
     "baseTexture": "",
