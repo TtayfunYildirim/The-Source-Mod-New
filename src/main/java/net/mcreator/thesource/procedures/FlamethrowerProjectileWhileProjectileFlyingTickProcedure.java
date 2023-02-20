@@ -58,9 +58,9 @@ public class FlamethrowerProjectileWhileProjectileFlyingTickProcedure {
 		}
 		if (world instanceof ServerWorld) {
 			((World) world).getServer().getCommandManager().handleCommand(
-					new CommandSource(ICommandSource.DUMMY, new Vector3d(x, y, z), Vector2f.ZERO, (ServerWorld) world, 4, "",
+					new CommandSource(ICommandSource.DUMMY, new Vector3d(x, (y - 1), z), Vector2f.ZERO, (ServerWorld) world, 4, "",
 							new StringTextComponent(""), ((World) world).getServer(), null).withFeedbackDisabled(),
-					"/summon area_effect_cloud ~ ~ ~ {Particle:\"flame\",Radius:2f,Duration:10,Effects:[{Id:\"the_source:flamethrower_burn\"}]}");
+					"/summon area_effect_cloud ~ ~ ~ {Particle:\"flame\",Radius:2.5f,Duration:10,Effects:[{Id:\"the_source:flamethrower_burn\"}]}");
 		}
 		new Object() {
 			private int ticks = 0;

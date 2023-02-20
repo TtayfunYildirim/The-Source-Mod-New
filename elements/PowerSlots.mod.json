@@ -172,19 +172,6 @@
         }
       },
       {
-        "type": "image",
-        "data": {
-          "image": "clovercannon.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "CloverCanonOpenedCondition"
-          },
-          "name": "clovercannon.png",
-          "x": 6,
-          "y": 201
-        }
-      },
-      {
         "type": "label",
         "data": {
           "text": "<VAR:selectedskill>",
@@ -195,6 +182,19 @@
           "name": "<VAR:selectedskill>",
           "x": 2,
           "y": 157
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "clovernew.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "CloverCanonOpenedCondition"
+          },
+          "name": "clovernew.png",
+          "x": 6,
+          "y": 201
         }
       }
     ],

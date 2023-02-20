@@ -1,0 +1,47 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.model.new": {
+      "loop": true,
+      "animation_length": 2,
+      "bones": {
+        "Back": {
+          "rotation": {
+            "0.0": {
+              "vector": [
+                0,
+                0,
+                -360
+              ]
+            },
+            "2.0": {
+              "vector": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        "Right": {
+          "rotation": {
+            "0.0": {
+              "vector": [
+                0,
+                0,
+                0
+              ]
+            },
+            "2.0": {
+              "vector": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -47,7 +47,7 @@ public class PowerChangeToLeftProcedure {
 			{
 				String _setval = "Heat Touch";
 				entity.getCapability(TheSourceModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.power = _setval;
+					capability.selectedskill = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
@@ -56,7 +56,7 @@ public class PowerChangeToLeftProcedure {
 			{
 				String _setval = "Strong Punch";
 				entity.getCapability(TheSourceModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.power = _setval;
+					capability.selectedskill = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
@@ -65,7 +65,7 @@ public class PowerChangeToLeftProcedure {
 			{
 				String _setval = "Flamethrower";
 				entity.getCapability(TheSourceModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.power = _setval;
+					capability.selectedskill = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
@@ -74,7 +74,7 @@ public class PowerChangeToLeftProcedure {
 			{
 				String _setval = "Clover Cannon";
 				entity.getCapability(TheSourceModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.power = _setval;
+					capability.selectedskill = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
@@ -83,7 +83,7 @@ public class PowerChangeToLeftProcedure {
 			{
 				String _setval = "Burning Whirlpool";
 				entity.getCapability(TheSourceModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.power = _setval;
+					capability.selectedskill = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}

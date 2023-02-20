@@ -17,6 +17,8 @@
  */
 package net.mcreator.thesource;
 
+import software.bernie.geckolib3.GeckoLib;
+
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -53,6 +55,7 @@ public class TheSourceMod {
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::init);
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientLoad);
 		MinecraftForge.EVENT_BUS.register(new TheSourceModFMLBusEvents(this));
+		GeckoLib.initialize();
 	}
 
 	private void init(FMLCommonSetupEvent event) {

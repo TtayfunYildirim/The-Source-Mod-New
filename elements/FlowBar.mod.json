@@ -1,0 +1,31 @@
+{
+  "_fv": 34,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:flowlevel>",
+          "color": {
+            "value": -13369396,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:flowlevel>",
+          "x": 4,
+          "y": 5
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

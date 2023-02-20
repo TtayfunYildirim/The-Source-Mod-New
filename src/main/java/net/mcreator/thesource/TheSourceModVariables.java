@@ -84,6 +84,8 @@ public class TheSourceModVariables {
 			nbt.putDouble("playerexpcap", instance.playerexpcap);
 			nbt.putDouble("lastopenedpowernumber", instance.lastopenedpowernumber);
 			nbt.putString("selectedskill", instance.selectedskill);
+			nbt.putDouble("damagemodifier", instance.damagemodifier);
+			nbt.putDouble("maxflow", instance.maxflow);
 			return nbt;
 		}
 
@@ -103,6 +105,8 @@ public class TheSourceModVariables {
 			instance.playerexpcap = nbt.getDouble("playerexpcap");
 			instance.lastopenedpowernumber = nbt.getDouble("lastopenedpowernumber");
 			instance.selectedskill = nbt.getString("selectedskill");
+			instance.damagemodifier = nbt.getDouble("damagemodifier");
+			instance.maxflow = nbt.getDouble("maxflow");
 		}
 	}
 
@@ -120,6 +124,8 @@ public class TheSourceModVariables {
 		public double playerexpcap = 20.0;
 		public double lastopenedpowernumber = 0;
 		public String selectedskill = "NONE";
+		public double damagemodifier = 0;
+		public double maxflow = 50.0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayerEntity)
@@ -160,14 +166,16 @@ public class TheSourceModVariables {
 		clone.status = original.status;
 		clone.race = original.race;
 		clone.selectedpower = original.selectedpower;
-		clone.flowlevel = original.flowlevel;
 		clone.lifeforcelevel = original.lifeforcelevel;
 		clone.soulforcelevel = original.soulforcelevel;
 		clone.playerexperience = original.playerexperience;
 		clone.playerexpcap = original.playerexpcap;
 		clone.lastopenedpowernumber = original.lastopenedpowernumber;
 		clone.selectedskill = original.selectedskill;
+		clone.damagemodifier = original.damagemodifier;
+		clone.maxflow = original.maxflow;
 		if (!event.isWasDeath()) {
+			clone.flowlevel = original.flowlevel;
 		}
 	}
 
@@ -206,6 +214,8 @@ public class TheSourceModVariables {
 					variables.playerexpcap = message.data.playerexpcap;
 					variables.lastopenedpowernumber = message.data.lastopenedpowernumber;
 					variables.selectedskill = message.data.selectedskill;
+					variables.damagemodifier = message.data.damagemodifier;
+					variables.maxflow = message.data.maxflow;
 				}
 			});
 			context.setPacketHandled(true);

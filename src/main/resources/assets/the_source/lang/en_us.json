@@ -1,13 +1,17 @@
 {
   "key.the_source.selected_power_change_left": "Power Change Left",
-  "item.the_source.deneme": "Deneme",
+  "entity.the_source.clover_cannon": "CloverCannon",
   "key.the_source.ability_use": "Ability Use",
   "key.categories.the_source": "The Source",
   "itemGroup.tabthe_source": "The Source",
-  "key.the_source.power_change_to_right": "Power Change Right",
   "item.the_source.strong_punch_projectile": "Strong Punch Projectile",
-  "item.the_source.flamethrower_projectile": "Flamethrower Projectile",
   "effect.flamethrower_burn": "Burning",
   "subtitles.strongpunch": "Strong Punch",
+  "effect.heat_touch": "Heat Touch",
+  "item.the_source.deneme": "Deneme",
+  "effect.died_from_heat": "DiedFromHeat",
+  "key.the_source.power_change_to_right": "Power Change Right",
+  "item.the_source.flamethrower_projectile": "Flamethrower Projectile",
+  "item.the_source.clover_cannon_spawn_egg": "CloverCannon Spawn Egg",
   "key.the_source.ability_open": "Ability Open"
 }

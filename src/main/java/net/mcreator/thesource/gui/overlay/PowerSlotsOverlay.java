@@ -127,15 +127,15 @@ public class PowerSlotsOverlay {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("the_source:textures/screens/whirlpool.png"));
 					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -184, posY + 81, 0, 0, 16, 16, 16, 16);
 				}
-				if (CloverCanonOpenedConditionProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity))
-						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll))) {
-					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("the_source:textures/screens/clovercannon.png"));
-					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -207, posY + 81, 0, 0, 16, 16, 16, 16);
-				}
 				Minecraft.getInstance().fontRenderer.drawString(event.getMatrixStack(),
 						"" + ((entity.getCapability(TheSourceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 								.orElse(new TheSourceModVariables.PlayerVariables())).selectedskill) + "",
 						posX + -211, posY + 37, -65485);
+				if (CloverCanonOpenedConditionProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity))
+						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll))) {
+					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("the_source:textures/screens/clovernew.png"));
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -207, posY + 81, 0, 0, 16, 16, 16, 16);
+				}
 			}
 			RenderSystem.depthMask(true);
 			RenderSystem.enableDepthTest();

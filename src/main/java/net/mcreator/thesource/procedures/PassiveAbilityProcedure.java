@@ -49,7 +49,7 @@ public class PassiveAbilityProcedure {
 		if (((entity.getCapability(TheSourceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new TheSourceModVariables.PlayerVariables())).power).equals("Heat")) {
 			if (entity instanceof LivingEntity)
-				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.FIRE_RESISTANCE, (int) 200, (int) 1, (false), (false)));
+				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.FIRE_RESISTANCE, (int) 200, (int) 0, (false), (false)));
 		}
 	}
 }

@@ -87,7 +87,15 @@ public class AbilityChooseGuiHeatGuiWindow extends ContainerScreen<AbilityChoose
 	@Override
 	protected void drawGuiContainerForegroundLayer(MatrixStack ms, int mouseX, int mouseY) {
 		this.font.drawString(ms, "" + (int) ((entity.getCapability(TheSourceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new TheSourceModVariables.PlayerVariables())).playerexperience) + "", 11, 9, -12829636);
+				.orElse(new TheSourceModVariables.PlayerVariables())).playerexperience) + "", 15, 16, -12829636);
+		this.font.drawString(ms, "" + (int) ((entity.getCapability(TheSourceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new TheSourceModVariables.PlayerVariables())).playerexpcap) + "", 15, 25, -16777216);
+		this.font.drawString(ms, "" + (int) ((entity.getCapability(TheSourceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new TheSourceModVariables.PlayerVariables())).flowlevel) + "", 15, 79, -13312);
+		this.font.drawString(ms, "" + (int) ((entity.getCapability(TheSourceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new TheSourceModVariables.PlayerVariables())).lifeforcelevel) + "", 15, 88, -3407821);
+		this.font.drawString(ms, "" + (int) ((entity.getCapability(TheSourceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new TheSourceModVariables.PlayerVariables())).soulforcelevel) + "", 15, 97, -3407617);
 	}
 
 	@Override

@@ -1,0 +1,20 @@
+{
+  "_fv": 34,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Heat Touch",
+    "icon": "heatouch.png",
+    "color": {
+      "value": -65434,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": false,
+    "onActiveTick": {
+      "name": "HeatTouchOnEffectActiveTick"
+    }
+  }
+}

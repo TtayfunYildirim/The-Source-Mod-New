@@ -505,7 +505,7 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "entity",
+            "name": "sourceentity",
             "type": "entity"
           }
         ]
@@ -626,6 +626,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -775,6 +791,333 @@
         ]
       },
       "path": "~/passive abilities"
+    },
+    {
+      "name": "DiedFromHeat",
+      "type": "potioneffect",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "died_from_heat",
+      "path": "~/abilities/Heat"
+    },
+    {
+      "name": "Immunity",
+      "type": "tag",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "immunity",
+      "path": "~/abilities/Heat"
+    },
+    {
+      "name": "BurningWhirlpoolUsed",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burning_whirlpool_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/abilities/Heat/burning whirlpool"
+    },
+    {
+      "name": "HeatTouch",
+      "type": "potioneffect",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heat_touch",
+      "path": "~/abilities/Heat/Heat Touch"
+    },
+    {
+      "name": "HeatTouchBlockSmelt",
+      "type": "procedure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heat_touch_block_smelt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/abilities/Heat/Heat Touch"
+    },
+    {
+      "name": "ActiveSkillEntityAttack",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_skill_entity_attack",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/passive abilities"
+    },
+    {
+      "name": "HeatTouchUsed",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heat_touch_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/abilities/Heat/Heat Touch"
+    },
+    {
+      "name": "CloverCannon",
+      "type": "livingentity",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clover_cannon",
+      "path": "~/mobs"
+    },
+    {
+      "name": "CloverCannonModel",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clover_cannon_model",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/mobs"
+    },
+    {
+      "name": "CloverCannonOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clover_cannon_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/abilities/Heat/clover cannon"
+    },
+    {
+      "name": "CloverCannonUsed",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clover_cannon_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/abilities/Heat/clover cannon"
+    },
+    {
+      "name": "CloverCannonHeightInhibitor",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clover_cannon_height_inhibitor",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/mobs"
+    },
+    {
+      "name": "FlowBar",
+      "type": "overlay",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flow_bar",
+      "path": "~/ui/flow bar"
+    },
+    {
+      "name": "PowerBarsRegenerate",
+      "type": "procedure",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "power_bars_regenerate",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ui"
+    },
+    {
+      "name": "HeatTouchOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heat_touch_on_effect_active_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/abilities/Heat/Heat Touch"
+    },
+    {
+      "name": "SetMaxFlowTo",
+      "type": "procedure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_max_flow_to",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/commands"
+    },
+    {
+      "name": "SetMaxFlow",
+      "type": "command",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_max_flow",
+      "path": "~/commands"
+    },
+    {
+      "name": "SetFlowTo",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_flow_to",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/commands"
+    },
+    {
+      "name": "SetFlow",
+      "type": "command",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_flow",
+      "path": "~/commands"
     }
   ],
   "variable_elements": [
@@ -817,7 +1160,7 @@
     {
       "name": "flowlevel",
       "type": "number",
-      "scope": "player_persistent",
+      "scope": "player_lifetime",
       "value": "50.0"
     },
     {
@@ -855,6 +1198,18 @@
       "type": "string",
       "scope": "player_persistent",
       "value": "NONE"
+    },
+    {
+      "name": "damagemodifier",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "maxflow",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "50.0"
     }
   ],
   "sound_elements": [
@@ -870,15 +1225,19 @@
   "language_map": {
     "en_us": {
       "key.the_source.selected_power_change_left": "Power Change Left",
-      "item.the_source.deneme": "Deneme",
+      "entity.the_source.clover_cannon": "CloverCannon",
       "key.the_source.ability_use": "Ability Use",
       "key.categories.the_source": "The Source",
       "itemGroup.tabthe_source": "The Source",
-      "key.the_source.power_change_to_right": "Power Change Right",
       "item.the_source.strong_punch_projectile": "Strong Punch Projectile",
-      "item.the_source.flamethrower_projectile": "Flamethrower Projectile",
       "effect.flamethrower_burn": "Burning",
       "subtitles.strongpunch": "Strong Punch",
+      "effect.heat_touch": "Heat Touch",
+      "item.the_source.deneme": "Deneme",
+      "effect.died_from_heat": "DiedFromHeat",
+      "key.the_source.power_change_to_right": "Power Change Right",
+      "item.the_source.flamethrower_projectile": "Flamethrower Projectile",
+      "item.the_source.clover_cannon_spawn_egg": "CloverCannon Spawn Egg",
       "key.the_source.ability_open": "Ability Open"
     }
   },
@@ -909,6 +1268,10 @@
               },
               {
                 "name": "clover cannon",
+                "children": []
+              },
+              {
+                "name": "Heat Touch",
                 "children": []
               }
             ]
@@ -1007,16 +1370,19 @@
   "workspaceSettings": {
     "modid": "the_source",
     "modName": "The Source",
-    "version": "0.0.4",
+    "version": "0.1.0",
     "description": "Let your powers run wild in a world divided between normals and source users.",
     "author": "Tayfun",
-    "license": "Academic Free License v3.0",
+    "websiteURL": "https://mcreator.net",
+    "license": "Custom license",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
     "currentGenerator": "forge-1.16.5",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.thesource",

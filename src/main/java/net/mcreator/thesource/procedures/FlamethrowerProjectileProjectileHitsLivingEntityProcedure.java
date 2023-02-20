@@ -1,7 +1,10 @@
 package net.mcreator.thesource.procedures;
 
+import net.minecraft.potion.EffectInstance;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
+import net.mcreator.thesource.potion.DiedFromHeatPotionEffect;
 import net.mcreator.thesource.TheSourceMod;
 
 import java.util.Map;
@@ -16,5 +19,7 @@ public class FlamethrowerProjectileProjectileHitsLivingEntityProcedure {
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		entity.setFire((int) 10);
+		if (entity instanceof LivingEntity)
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(DiedFromHeatPotionEffect.potion, (int) 100, (int) 1, (false), (false)));
 	}
 }

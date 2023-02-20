@@ -1,10 +1,10 @@
 modLoader="javafml"
 loaderVersion="[36,)"
-license="Academic Free License v3.0"
+license="Custom license"
 
 [[mods]]
 modId="the_source"
-version="0.0.4"
+version="0.1.0"
 displayName="The Source"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://mcreator.net"
@@ -22,4 +22,10 @@ Let your powers run wild in a world divided between normals and source users.
 
 
 
+[[dependencies.the_source]]
+    modId="geckolib"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 

@@ -43,8 +43,60 @@
             "falpha": 0.0
           },
           "name": "<VAR:integer:playerexperience>",
-          "x": 137,
-          "y": 46
+          "x": 141,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:playerexpcap>",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:playerexpcap>",
+          "x": 141,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:flowlevel>",
+          "color": {
+            "value": -13312,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:flowlevel>",
+          "x": 141,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:lifeforcelevel>",
+          "color": {
+            "value": -3407821,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:lifeforcelevel>",
+          "x": 141,
+          "y": 125
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:soulforcelevel>",
+          "color": {
+            "value": -3407617,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:soulforcelevel>",
+          "x": 141,
+          "y": 134
         }
       }
     ],
@@ -53,7 +105,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": false
+      "snapOnGrid": true
     }
   }
 }
