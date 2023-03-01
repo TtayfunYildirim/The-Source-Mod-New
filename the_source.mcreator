@@ -1118,6 +1118,412 @@
       "locked_code": false,
       "registry_name": "set_flow",
       "path": "~/commands"
+    },
+    {
+      "name": "LightiningSlotsDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightining_slots_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ui/Power Slots/lightining slots"
+    },
+    {
+      "name": "LightiningSlots",
+      "type": "overlay",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightining_slots",
+      "path": "~/ui/Power Slots/lightining slots"
+    },
+    {
+      "name": "LightiningNerveOpenCondition",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightining_nerve_open_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ui/Power Slots/lightining slots"
+    },
+    {
+      "name": "LastOpenedPowerLightining",
+      "type": "procedure",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "last_opened_power_lightining",
+      "metadata": {
+        "return_type": "number",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ui/Power Slots"
+    },
+    {
+      "name": "LightiningChangeToLeft",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightining_change_to_left",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ui/Power Slots/lightining slots"
+    },
+    {
+      "name": "LightiningChangeToRight",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightining_change_to_right",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ui/Power Slots/lightining slots"
+    },
+    {
+      "name": "ChangeToBirquRightclicked",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "change_to_birqu_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/items"
+    },
+    {
+      "name": "ChangeToBirqu",
+      "type": "item",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "change_to_birqu",
+      "path": "~/items"
+    },
+    {
+      "name": "NerveWreck",
+      "type": "potioneffect",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nerve_wreck",
+      "path": "~/abilities/Lightining/Nerve Wrecking Mode"
+    },
+    {
+      "name": "NerveWreckActiveTickCondition",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nerve_wreck_active_tick_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/abilities/Lightining/Nerve Wrecking Mode"
+    },
+    {
+      "name": "NerveWreckUsed",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nerve_wreck_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/abilities/Lightining/Nerve Wrecking Mode"
+    },
+    {
+      "name": "StunedOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stuned_on_effect_active_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/abilities/Lightining/Nerve Wrecking Mode"
+    },
+    {
+      "name": "Stuned",
+      "type": "potioneffect",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stuned",
+      "path": "~/abilities/Lightining/Nerve Wrecking Mode"
+    },
+    {
+      "name": "DashProcedure",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/abilities/Lightining/Dash"
+    },
+    {
+      "name": "LightiningStrikeProjectileProjectileHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightining_strike_projectile_projectile_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/abilities/Lightining/Lightining Strike"
+    },
+    {
+      "name": "LightiningStrikeProjectile",
+      "type": "rangeditem",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightining_strike_projectile",
+      "path": "~/abilities/Lightining/Lightining Strike"
+    },
+    {
+      "name": "LightiningStrikeProjectileWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightining_strike_projectile_while_projectile_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/abilities/Lightining/Lightining Strike"
+    },
+    {
+      "name": "LightiningStrikeUsed",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightining_strike_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/abilities/Lightining/Lightining Strike"
+    },
+    {
+      "name": "LeapUsed",
+      "type": "procedure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leap_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/abilities/Lightining/Leap"
+    },
+    {
+      "name": "OverloadUsed",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "overload_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/abilities/Lightining/Overload"
+    },
+    {
+      "name": "FlowLevelDown",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flow_level_down",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/abilities"
+    },
+    {
+      "name": "LeapOnOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leap_on_on_effect_active_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/abilities/Lightining/Leap"
+    },
+    {
+      "name": "LeapOn",
+      "type": "potioneffect",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leap_on",
+      "path": "~/abilities/Lightining/Leap"
     }
   ],
   "variable_elements": [
@@ -1224,20 +1630,25 @@
   ],
   "language_map": {
     "en_us": {
-      "key.the_source.selected_power_change_left": "Power Change Left",
       "entity.the_source.clover_cannon": "CloverCannon",
+      "key.the_source.selected_power_change_left": "Power Change Left",
       "key.the_source.ability_use": "Ability Use",
       "key.categories.the_source": "The Source",
+      "effect.leap_on": "None",
       "itemGroup.tabthe_source": "The Source",
       "item.the_source.strong_punch_projectile": "Strong Punch Projectile",
       "effect.flamethrower_burn": "Burning",
       "subtitles.strongpunch": "Strong Punch",
       "effect.heat_touch": "Heat Touch",
+      "effect.stuned": "Stunned",
+      "effect.nerve_wreck": "Nerve Wreck",
       "item.the_source.deneme": "Deneme",
       "effect.died_from_heat": "DiedFromHeat",
       "key.the_source.power_change_to_right": "Power Change Right",
+      "item.the_source.lightining_strike_projectile": "Lightining Strike Projectile",
       "item.the_source.flamethrower_projectile": "Flamethrower Projectile",
       "item.the_source.clover_cannon_spawn_egg": "CloverCannon Spawn Egg",
+      "item.the_source.change_to_birqu": "Change To Birqu",
       "key.the_source.ability_open": "Ability Open"
     }
   },
@@ -1278,7 +1689,28 @@
           },
           {
             "name": "Lightining",
-            "children": []
+            "children": [
+              {
+                "name": "Nerve Wrecking Mode",
+                "children": []
+              },
+              {
+                "name": "Dash",
+                "children": []
+              },
+              {
+                "name": "Lightining Strike",
+                "children": []
+              },
+              {
+                "name": "Leap",
+                "children": []
+              },
+              {
+                "name": "Overload",
+                "children": []
+              }
+            ]
           },
           {
             "name": "Raven",

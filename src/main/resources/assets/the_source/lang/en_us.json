@@ -1,17 +1,22 @@
 {
-  "key.the_source.selected_power_change_left": "Power Change Left",
   "entity.the_source.clover_cannon": "CloverCannon",
+  "key.the_source.selected_power_change_left": "Power Change Left",
   "key.the_source.ability_use": "Ability Use",
   "key.categories.the_source": "The Source",
+  "effect.leap_on": "None",
   "itemGroup.tabthe_source": "The Source",
   "item.the_source.strong_punch_projectile": "Strong Punch Projectile",
   "effect.flamethrower_burn": "Burning",
   "subtitles.strongpunch": "Strong Punch",
   "effect.heat_touch": "Heat Touch",
+  "effect.stuned": "Stunned",
+  "effect.nerve_wreck": "Nerve Wreck",
   "item.the_source.deneme": "Deneme",
   "effect.died_from_heat": "DiedFromHeat",
   "key.the_source.power_change_to_right": "Power Change Right",
+  "item.the_source.lightining_strike_projectile": "Lightining Strike Projectile",
   "item.the_source.flamethrower_projectile": "Flamethrower Projectile",
   "item.the_source.clover_cannon_spawn_egg": "CloverCannon Spawn Egg",
+  "item.the_source.change_to_birqu": "Change To Birqu",
   "key.the_source.ability_open": "Ability Open"
 }

@@ -1,0 +1,162 @@
+{
+  "_fv": 34,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "slotmc.png",
+          "use1Xscale": false,
+          "name": "slotmc.png",
+          "x": 6,
+          "y": 179
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "slotmc.png",
+          "use1Xscale": false,
+          "name": "slotmc.png",
+          "x": 33,
+          "y": 179
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "slotmc.png",
+          "use1Xscale": false,
+          "name": "slotmc.png",
+          "x": 60,
+          "y": 179
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "slotmc.png",
+          "use1Xscale": false,
+          "name": "slotmc.png",
+          "x": 15,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "slotmc.png",
+          "use1Xscale": false,
+          "name": "slotmc.png",
+          "x": 42,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "nerve.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "LightiningNerveOpenCondition"
+          },
+          "name": "nerve.png",
+          "x": 6,
+          "y": 179
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "selectionring.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "HeatFirstPowerSelectedControl"
+          },
+          "name": "selectionring.png",
+          "x": 6,
+          "y": 179
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "selectionring.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "HeatSecondPowerSelectedControl"
+          },
+          "name": "selectionring.png",
+          "x": 33,
+          "y": 179
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "selectionring.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "HeatThirdPowerSelectedControl"
+          },
+          "name": "selectionring.png",
+          "x": 60,
+          "y": 179
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "selectionring.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "HeatFourthPowerSelectedControl"
+          },
+          "name": "selectionring.png",
+          "x": 15,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "selectionring.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "HeatFifthPowerSelectedControl"
+          },
+          "name": "selectionring.png",
+          "x": 42,
+          "y": 206
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:selectedskill>",
+          "color": {
+            "value": -16724737,
+            "falpha": 0.0
+          },
+          "name": "<VAR:selectedskill>",
+          "x": 6,
+          "y": 152
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "LightiningSlotsDisplayOverlayIngame"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

@@ -9,6 +9,8 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
+import net.mcreator.thesource.potion.StunedPotionEffect;
+import net.mcreator.thesource.potion.NerveWreckPotionEffect;
 import net.mcreator.thesource.potion.HeatTouchPotionEffect;
 import net.mcreator.thesource.TheSourceMod;
 
@@ -71,6 +73,20 @@ public class ActiveSkillEntityAttackProcedure {
 			}
 		}.check(sourceentity)) {
 			entity.setFire((int) 5);
+		} else if (new Object() {
+			boolean check(Entity _entity) {
+				if (_entity instanceof LivingEntity) {
+					Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+					for (EffectInstance effect : effects) {
+						if (effect.getPotion() == NerveWreckPotionEffect.potion)
+							return true;
+					}
+				}
+				return false;
+			}
+		}.check(sourceentity)) {
+			if (entity instanceof LivingEntity)
+				((LivingEntity) entity).addPotionEffect(new EffectInstance(StunedPotionEffect.potion, (int) 40, (int) 0, (false), (false)));
 		}
 	}
 }

@@ -10,11 +10,13 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
+import net.mcreator.thesource.potion.NerveWreckPotionEffect;
 import net.mcreator.thesource.TheSourceModVariables;
 import net.mcreator.thesource.TheSourceMod;
 
 import java.util.Map;
 import java.util.HashMap;
+import java.util.Collection;
 
 public class PassiveAbilityProcedure {
 	@Mod.EventBusSubscriber
@@ -50,6 +52,27 @@ public class PassiveAbilityProcedure {
 				.orElse(new TheSourceModVariables.PlayerVariables())).power).equals("Heat")) {
 			if (entity instanceof LivingEntity)
 				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.FIRE_RESISTANCE, (int) 200, (int) 0, (false), (false)));
+		} else if (((entity.getCapability(TheSourceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new TheSourceModVariables.PlayerVariables())).power).equals("Lightining")) {
+			if (entity instanceof LivingEntity)
+				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SPEED, (int) 200, (int) 0, (false), (false)));
+			if (new Object() {
+				boolean check(Entity _entity) {
+					if (_entity instanceof LivingEntity) {
+						Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+						for (EffectInstance effect : effects) {
+							if (effect.getPotion() == NerveWreckPotionEffect.potion)
+								return true;
+						}
+					}
+					return false;
+				}
+			}.check(entity)) {
+				if (entity instanceof LivingEntity)
+					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.HASTE, (int) 200, (int) 0, (false), (false)));
+				if (entity instanceof LivingEntity)
+					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.JUMP_BOOST, (int) 200, (int) 0, (false), (false)));
+			}
 		}
 	}
 }

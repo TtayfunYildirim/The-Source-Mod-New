@@ -49,7 +49,7 @@ public class PowerBarsRegenerateProcedure {
 						.orElse(new TheSourceModVariables.PlayerVariables())).maxflow) {
 			{
 				double _setval = ((entity.getCapability(TheSourceModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new TheSourceModVariables.PlayerVariables())).flowlevel + 2);
+						.orElse(new TheSourceModVariables.PlayerVariables())).flowlevel + 1);
 				entity.getCapability(TheSourceModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.flowlevel = _setval;
 					capability.syncPlayerVariables(entity);
